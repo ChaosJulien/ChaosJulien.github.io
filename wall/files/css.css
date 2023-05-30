@@ -1,0 +1,102 @@
+﻿body {
+	overflow-y: hidden;
+}
+
+.now {
+	font-size: 2vw;
+	font-family: HYWenHei-85W;
+	color: #99FFFF;
+	text-shadow: 0px 0px 1vw #00CCFF;
+}
+
+.xiao {
+	font-size: 1.7vw;
+	font-family: HYWenHei-85W;
+	color: #99FFFF;
+	text-shadow: 0px 0px 1vw #00CCFF;
+}
+
+.da {
+	font-size: 4.5vw;
+	font-family: HYWenHei-85W;
+	color: #99FFFF;
+	text-shadow: 0px 0px 1vw #00CCFF;
+}
+
+.xiaon {
+	font-size: 2vw;
+	font-family: HYWenHei-85W;
+	color: #FFFFFF;
+}
+
+.das {
+	font-size: 8.5vw;
+	font-family: HYWenHei-85W;
+	color: #FFFFFF;
+}
+
+.xiaos {
+	font-size: 1.7vw;
+	font-family: HYWenHei-85W;
+	color: #FFFFFF;
+}
+
+.hide {
+	font-size: 1.7vw;
+	visibility: hidden;
+}
+
+.fu {
+	font-size: 2.3vw;
+	color: #99CCFF;
+	text-shadow: 0px 0px 0.5vw #66CCFF;
+}
+
+.para {
+	font-size: 3.5vw;
+	font-family: HYWenHei-85W;
+	color: #FFFFFF;
+	text-shadow: 0px 0px 1vw #FFFFFF;
+}
+
+.authorname {
+	font-size: 1vw;
+	color: #a6e6ff;
+	text-shadow: 0px 0px 0.75vw #a2e5ff;
+	position: absolute;
+	bottom: 2.5vw;
+	right: 2vw;
+	text-align: right;
+	width: 100%;
+}
+
+.kechengbiao {
+	font-family: "HYWenHei-85W", Arial, sans-serif;
+	color: #CCFFFF;
+	text-shadow: 0px 0px 1vw #33CCCC;
+	position: absolute;
+	top: 0;
+	right: 5%;
+	width: 90%;
+	text-align: right;
+	font-size: 200%;
+}
+
+
+.mingyan {
+	font-size: 1.7vw;
+	font-family: HYWenHei-85W;
+	color: #FFFFFF;
+}
+
+.mingyan2 {
+	font-size: 1.4vw;
+	font-family: HYWenHei-85W;
+	color: #FFFFFF;
+	text-align: right;
+}
+#hitokotoauthor {
+	display: block;
+	margin-top: 0.5em;
+}
+
