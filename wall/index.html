@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="./files/css.css">
+	<style>
+		.video-container {
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			z-index: -1;
+		}
+
+		.video-background {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+		}
+
+		.text-container {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+
+		.text-content {
+			padding: 2% 5%;
+			text-align: left; /* 文字左对齐 */
+		}
+	</style>
+</head>
+
+<body bgcolor="#000000">
+	<div class="video-container">
+		<video class="video-background" autoplay loop muted>
+			<source src="./files/1.mp4" type="video/mp4">
+		</video>
+	</div>
+
+	<div class="text-container">
+		<div class="text-content">
+			<span class="now">Now:</span>
+			<span class="hide">___ </span>
+			<span id="nnian" class="xiaon"></span>
+			<span class="fu">.</span>
+			<span id="nyue" class="xiaon"></span>
+			<span class="fu">.</span>
+			<span id="nri" class="xiaon"></span>
+				<span class="hide">___</span>
+			<span id="nshi" class="xiaon"></span>
+			<span class="fu">:</span>
+			<span id="nfen" class="xiaon"></span>
+			<span class="fu">:</span>
+			<span id="nmiao" class="xiaon"></span>
+
+			<br>
+			<span class="mingyan" id="hitokoto">一言加载中...</span>
+			<br>
+			<span class="mingyan2" id="hitokotoauthor"></span>
+
+			<span id="ltian" class="das"></span>
+			<span class="da"> D </span>
+			<span id="lshi" class="das"></span>
+			<span class="da"> h </span>
+			<span id="lfen" class="xiaos"></span>
+			<span class="xiao"> min </span>
+			<span> </span>
+			<span id="lmiao" class="xiaos"></span>
+			<span class="xiao"> s </span><br>
+			<span class="para">距离 </span>
+			<span id="er" class="para"></span>
+			<span class="para">学考
+			</span>
+
+			<span id="shuoming" class="authorname"></span>
+		</div>
+		<div id="kechengbiao-container" class="kechengbiao">
+			<span id="kechengbiao"></span>
+		</div>
+		
+		<div id="kechengbiao-container">
+			<span id="kechengbiao"></span>
+		</div>
+		
+		<script src="./files/kechengbiao.js"></script>
+		<script>
+			setInterval(function(){
+				kebiao();
+			}, 1000);
+		</script>
+		
+	</div>
+
+	<script src="./files/js.js" type="text/javascript"></script>
+	<script src="./files/hitokoto.js" type="text/javascript"></script>
+	<script src="./files/kechengbiao.js"></script>
+	<script src="./files/text.js"></script>
+</body>
+</html>
