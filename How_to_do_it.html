@@ -10,6 +10,7 @@
             text-align: center;
             margin: 50px;
             background-color: #f0f0f0;
+            transition: background-color 0.3s, color 0.3s;
         }
         .container {
             width: 40%;
@@ -19,6 +20,7 @@
             border-radius: 8px;
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
             text-align: left; /* 左对齐 */
+            transition: background-color 0.3s, color 0.3s;
         }
         .switch {
             display: flex;
@@ -66,6 +68,16 @@
             font-size: 14px; /* 版权字体大小 */
             color: #777; /* 版权颜色 */
         }
+        .dark_mode-icon {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer; /* 鼠标悬停时显示为手型 */
+        }
+        .dark_mode {
+            background-color: #333;
+            color: #fff;
+        }
     </style>
     <script>
         let toggleOrder = [];
@@ -98,10 +110,18 @@
                 document.getElementsByTagName('label')[firstSwitchId].childNodes[0].nodeValue = '有' + labels[firstSwitchId];
             }
         }
+
+        function toggleNightMode() {
+            const body = document.body;
+            const container = document.querySelector('.container');
+            body.classList.toggle('dark_mode');
+            container.classList.toggle('dark_mode');
+        }
     </script>
 </head>
 <body>
     <h1>遇到问题可以没有什么？</h1>
+    <img src="dark_mod.png" alt="夜间模式" class="dark_mode-icon" onclick="toggleNightMode()" style="width: 30px; height: 30px;">
     <div class="container">
         <div class="switch">
             <label>
