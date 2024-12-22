@@ -1,6 +1,14 @@
 const textEl = document.querySelector('#text');
 const texts = JSON.parse(textEl.getAttribute('data-text'));
 
+// Play the audio after a small delay to allow the page to load
+window.addEventListener('load', () => {
+    const audio = document.getElementById('background-audio');
+    audio.play().catch(error => {
+        console.log("Audio playback failed:", error);
+    });
+});
+
 let index = 0;
 let charIndex = 0;
 let delta = 300;
@@ -35,7 +43,6 @@ function type(time) {
             isDeleting = false;
             start = time + 200;
             index = ++index % texts.length;
-
         }
     }
 }
