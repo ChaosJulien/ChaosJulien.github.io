@@ -1,13 +1,14 @@
+document.addEventListener('DOMContentLoaded', () => {
+    const audio = document.getElementById('background-audio');
+    if (audio) {
+        audio.play().catch(error => {
+            console.log("Audio playback failed:", error);
+        });
+    }
+});
+
 const textEl = document.querySelector('#text');
 const texts = JSON.parse(textEl.getAttribute('data-text'));
-
-// Play the audio after a small delay to allow the page to load
-window.addEventListener('load', () => {
-    const audio = document.getElementById('background-audio');
-    audio.play().catch(error => {
-        console.log("Audio playback failed:", error);
-    });
-});
 
 let index = 0;
 let charIndex = 0;
