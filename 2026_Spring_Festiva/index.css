@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  background: linear-gradient(135deg, #9b1c1c, #b6281e, #7d1414);
+  overflow: hidden;
+  color: #fae49c;
+}
+
+/* 背景暗纹 */
+.bg-pattern {
+  position: fixed;
+  inset: 0;
+  background-image:
+    radial-gradient(rgba(255,255,255,0.05) 1px, transparent 1px);
+  background-size: 40px 40px;
+  opacity: .2;
+  pointer-events: none;
+}
+
+/* 顶部标题 */
+.title {
+  position: absolute;
+  top: 120px;
+  width: 100%;
+  text-align: center;
+  animation: breathing 6s ease-in-out infinite;
+}
+
+.title span {
+  display: block;
+  font-size: 72px;
+  font-weight: 700;
+  letter-spacing: .4rem;
+}
+
+.title em {
+  display: block;
+  font-style: normal;
+  font-size: 20px;
+  letter-spacing: .3rem;
+  opacity: .9;
+}
+
+/* 中央打字区域 */
+.describe {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.describe h1 {
+  font-size: 110px;
+  font-weight: 600;
+  letter-spacing: .4rem;
+  text-shadow:
+    0 8px 30px rgba(0,0,0,.4);
+  animation: float 8s ease-in-out infinite;
+}
+
+/* 打字光标 */
+.cursor {
+  display: inline-block;
+  width: 6px;
+  height: 1em;
+  background: #fae49c;
+  margin-left: 8px;
+  animation: blink 1s steps(1) infinite;
+  vertical-align: -0.1em;
+}
+
+/* 底部署名 */
+.title2 {
+  position: absolute;
+  bottom: 40px;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  letter-spacing: .25rem;
+  opacity: .7;
+}
+
+.title2 strong {
+  font-weight: 600;
+}
+
+/* 动画 */
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+@keyframes breathing {
+  0%, 100% { opacity: .9; }
+  50% { opacity: 1; }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
